@@ -21,7 +21,7 @@ body {
 
 body {
   line-height: 3;
-  font-family: var(--purple);
+  color: var(--purple);
   color: #333;
 }
 
@@ -61,7 +61,7 @@ nav a:visited {
   font-size: 1rem;
   text-align: center;
   padding: 0.5rem;
-  color: #fff;
+  color: var(--yellow);
   text-decoration: none;
 }
 
