@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Mono:wght@100&display=swap');
-
 :root {
     --primary-color: #6C0087;
     --secondary-color: #ff2fee;
@@ -14,6 +13,10 @@
     --nav-hover-link-color: #F7E141;
     --nav-2-hover-link-color: #F7E141;
 }
+
+* {
+    margin: 0;
+  }
 
 header {
     background-color: var(--primary-color);
@@ -146,7 +149,7 @@ figcaption {
 footer {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    padding: .1rem;
+    padding: 1rem;
     border-radius: 0.5cap;
     box-shadow: 0 0 10px #333;
 }
