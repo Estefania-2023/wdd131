@@ -42,6 +42,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     font-family: var(--paragraph-font);
+    background-color: var(--green);
 }
 
 picture img {
