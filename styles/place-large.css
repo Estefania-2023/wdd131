@@ -1,4 +1,4 @@
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
     :root {
         --backgrnd-transparent: hsla(0, 0%, 100%, 0.548);
         --green: #55A630;
