@@ -113,7 +113,23 @@ const temples = [
         imageUrl:
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/laie-hawaii/400x250/laie-temple-775370-wallpaper.jpg",
         alt: "Laie Hawaii Temple"
-      }
+      },
+      {
+        templeName: "Apia Samoa Temple",
+        location: "Apia, Pesega, Samoa",
+        dedicated: "1983, August, 5",
+        area: 18691,
+        imageUrl:
+          "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/apia-samoa/800x500/apia-samoa-temple-lds-460475-wallpaper.jpg",
+      },
+      {
+        templeName: "Durban South Africa Temple",
+        location: "Durban, South Africa",
+        dedicated: "2020, February, 16",
+        area: 19860,
+        imageUrl:
+          "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/durban-south-africa/800x500/1-8b3f1b895a7c92ee66c2d0c7e78606f75f0d0cc8.jpg",
+      },
   ]
   
 createTempleCard(temples);
