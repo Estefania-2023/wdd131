@@ -33,7 +33,24 @@
         padding: 0 0 5px 0;
         margin: 0;
     }
-    
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex: 1 1 100%;
+    }
+
+    ul li {
+        display: block;
+        flex: 1 1 100%;
+    }
 
 }
 
+
+@media (max-width: 740px){
+    .temple-card img {
+        width: 100%;
+        max-width: 200px;
+    }
+}

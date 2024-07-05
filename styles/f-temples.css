@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Slab:wght@100..900&display=swap');
 :root {
-    --primary-color: #490d70;
+    --primary-color: #11005ffb;
     --secondary-color: hsl(290, 100%, 56%);
     --accent1-color: #003858de;
-    --accent2-color: #ff2d84;
+    --accent2-color: #ff5286;
 
     --heading-font: Archivo Black, sans-serif;
     --paragraph-font: Roboto Slab;
@@ -76,7 +76,6 @@ h1 {
     padding: .75rem;
     font-family: var(--paragraph-font);
     font-weight: 600;
-    transition: 0.25s;
 }
 
 .navigation a:hover {
