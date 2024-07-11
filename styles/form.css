@@ -1,118 +1,181 @@
-:root {
-    --back1: rgba(44, 4, 44, 1);
-    --back2: rgba(44, 4, 44, .2);
-    --border: rgba(0, 0, 0, .1);
-  }
-  
-  * {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Great+Vibes&display=swap');
+.root{
+    --font-family1: 'Great Vibes';
+}
+/* * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
-    font-family: Lato, Helvetica, Arial, sans-serif;
-  }
-  
-  header,
-  footer {
+} */
+
+body {
+    font-size: 1em;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.review_form {
+    /* margin: 2rem 0; */
+    margin: 0 auto;
+    border: none;
+    width: 100%;
+    max-width: 410px;
+    background-color: #CAC5D3;
+    border-radius: 3px;
+    padding-top: 0;
+    padding: 0 .8rem .8rem .8rem;
+}
+
+.review_form fieldset {
+    border: none;
+    /* padding: 0 .8rem .8rem .8rem; */
+}
+
+#form_title {
+    margin: 0 auto;
     color: white;
-    background-color: var(--back1);
+    background-color: #302C49;
+    font-family: var(--font-family1);
+    border-radius: 3px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 410px;
+    margin-bottom: .75rem;
     text-align: center;
-    padding: 1rem;
-  }
-  
-  h1 {
     font-size: 1.5rem;
-  }
-  
-  img {
+    font-weight: 500;
+}
+
+#form_text {
+    margin: 0 auto;
+    color: #302C49;
+    border-radius: 3px;
+    padding: 2rem;
+    margin-top: 1rem;
     width: 100%;
-    height: auto;
-  }
-  
-  form {
-    margin: 1rem auto;
-    border: 1px solid var(--border);
-    padding: 1rem;
-    background-color: var(--back2);
-    border-radius: 5px;
-    max-width: 500px;
-  }
-  
-  .item {
-    margin-bottom: 1rem;
-  }
-  
-  label,
-  .item p {
-    font-size: .85rem;
-    font-weight: 700;
-  }
-  
-  input[type="text"],
-  input[type="checkbox"],
-  input[type="date"],
-  input[type="radio"],
-  textarea,
-  select {
-    margin-top: .25rem;
-    padding: .5rem;
-    border: 1px solid var(--border);
+    max-width: 200px;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+label, legend {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .9rem;
+    padding-bottom: 2px;
+}
+
+.stars {
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+#rating_head {
+    margin: 2.5%;
+    margin-bottom: 0;
+}
+
+.radio_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding-top: 0;
+    margin: 0; */
+}
+
+.radio_btn label{
     width: 100%;
-  }
-  
-  input:focus {
-    outline: 1px solid #999;
-  }
-  
-  input[type="checkbox"],
-  [type="radio"] {
-    width: 25px;
-    height: 25px;
-  }
-  
-  input[type="submit"] {
-    font-weight: 700;
-    font-size: larger;
-    width: 100%;
-    padding: .5rem;
-  }
-  
-  textarea {
-    height: 6rem;
-  }
-  
-  .radio-group {
-    margin-top: .25rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-items: center;
-  }
-  
-  
-  .checkbox-group {
-    display: grid;
-    grid-template-columns: max-content 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: max-content;
-  }
-  
-  .checkbox-group label {
-    margin-left: .5rem;
-  }
-  
-  .smaller {
-    font-size: .7rem;
-    color: navy;
-  }
-  
-  
-  @media (min-width: 600px) {
-  
-    h1 {
-      font-size: 2rem;
-    }
-  
-  }
+    font-size: .75rem;
+    padding-top: .5rem;
+}
+
+.radio_btn input[type="radio"] {
+    display: flex;
+    flex-direction: row;
+    transform: scale(1.5);
+}
+
+.rating .radio_pair label {
+    margin-right: 10px;
+}
+
+.review_form input[type="text"],
+.review_form input[type="date"],
+.review_form select {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 3px;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+.review_form input[type="date"] {
+    padding-left: .5rem;
+}
+
+.features {
+    padding-bottom: 0;
+}
+
+.features input[type="checkbox"] {
+    margin-right: 6px;
+    transform: scale(1.5);
+}
+
+.features label {
+    margin: 0;
+    padding: 5px;
+}
+
+.review_form textarea {
+    width: 100%;
+    max-width: 400px;
+    height: 100px;
+}
+
+.check_all {
+    font-style: italic;
+}
+
+.optional {
+    font-size: .75rem;
+    color: darkblue;
+}
+
+.review_form input[type="submit"] {
+    border: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: lightgrey;
+    border: .2px solid black;
+    border-radius: 3px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px #999;
+    appearance: none;
+    margin-top: .5rem;
+}
+
+footer {
+    margin: 0 auto;
+    color: white;
+    background-color: #302C49;
+    border-radius: 3px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 410px;
+    margin-top: .75rem;
+    text-align: center;
+}
