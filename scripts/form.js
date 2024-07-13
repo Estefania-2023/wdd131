@@ -36,10 +36,6 @@ products.forEach((product) => {
 })
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    let reviewCounter = parseInt(localStorage.getItem("reviewCounter")) || 0;
 
-    const form = document.querySelector(".review_form");
-});
 
 

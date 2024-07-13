@@ -168,6 +168,12 @@ label, legend {
     margin-top: .5rem;
 }
 
+p{
+    margin: 0;
+    text-align: center;
+
+}
+
 footer {
     margin: 0 auto;
     color: white;
