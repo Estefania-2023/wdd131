@@ -67,7 +67,6 @@ h2{
 }
 
 .information img{
-    border-bottom: .4rem solid var(--red);
     width: 100%;
     height: auto;
     border: 5px solid var(--nav-2-hover-link-color);
