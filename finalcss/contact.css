@@ -241,9 +241,7 @@ footer p {
     }
     .information img {
         width: 250px;
-        height: auto;
         justify-items: center;
-        width: 100%;
     height: auto;
     }
 }
